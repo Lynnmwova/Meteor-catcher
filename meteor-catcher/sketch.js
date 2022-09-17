@@ -12,7 +12,7 @@ function preload(){
 }
 // this function creates the size of the canvas 
 function setup() {
-createCanvas(900, 750); // (width,height)
+createCanvas(1500, 750); // (width,height)
 }
 
 //this function is the main loop
@@ -21,12 +21,12 @@ function draw() {
   //background(0,0,0);
   noStroke();
  // drawing the meteor
-  fill(156, 46, 53); // colors are filled in using  RGB 
+  fill(192, 192, 192); // colors are filled in using  RGB 
   ellipse(meteorX, meteorY, meteorDiameter, meteorDiameter);
   meteorY= meteorY + 1; // or meteorY++
   
   // the catcher
-fill(255, 255, 255, 100);
+fill(255,69,0, 100);
 ellipse(mouseX, mouseY,catcherDiameter,catcherDiameter);
 distance = dist(meteorX, meteorY, mouseX, mouseY);
 print(`Distance = ` + distance); // used this statement to help me debug the code
