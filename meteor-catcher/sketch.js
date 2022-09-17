@@ -5,18 +5,23 @@ let meteorDiameter = 30; // stores diameter
 let catcherDiameter = 50;
 let speed = 1;
 let distance;
+var bg; // declare variable for background image
 
+function preload(){
+  bg = loadImage("space2.jpg");
+}
 // this function creates the size of the canvas 
 function setup() {
-createCanvas(800, 800); // (width,height)
+createCanvas(900, 750); // (width,height)
 }
 
 //this function is the main loop
 function draw() {
-  background(0,0,0);
+  background (bg);
+  //background(0,0,0);
   noStroke();
  // drawing the meteor
-  fill(0, 254, 202); // colors are filled in using  RGB 
+  fill(156, 46, 53); // colors are filled in using  RGB 
   ellipse(meteorX, meteorY, meteorDiameter, meteorDiameter);
   meteorY= meteorY + 1; // or meteorY++
   
