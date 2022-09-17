@@ -12,7 +12,7 @@ function preload(){
 }
 // this function creates the size of the canvas 
 function setup() {
-createCanvas(1500, 750); // (width,height)
+createCanvas(1300, 750); // (width,height)
 }
 
 //this function is the main loop
