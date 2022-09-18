@@ -3,7 +3,7 @@ let meteorX = 400; // stores the x-cordinate of the meteor
 let meteorY = 0;  // stores the y-cordinate of the meteor
 let meteorDiameter = 30; // stores diameter 
 let catcherDiameter = 50;
-let speed = 1;
+let speed = 2;
 let distance;
 var bg; // declare variable for background image
 
@@ -33,7 +33,7 @@ print(`Distance = ` + distance); // used this statement to help me debug the cod
 if(distance < 15){
   meteorY = 0;
   meteorX = random(width);
-   speed = random(1,4);
+   speed = random(2,5);
   meteorDiameter = random(10,30);
 
 } //This conditional returns the meteorY to 0 and meteorX to a random position in width when the catcher intersects with the meteor
@@ -41,7 +41,7 @@ if(distance < 15){
 if(meteorY > height){
 meteorY = 0; 
 meteorX = random(width);
-speed = random (1,4);
+speed = random (2,5);
 meteorDiameter = random(10,30);
 } // This conditional returnes meteor Y to 0 when it travels a distance > 800; and meteorX to a random position along the width
 }
