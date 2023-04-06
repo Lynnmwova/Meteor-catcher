@@ -8,7 +8,7 @@ let distance;
 var bg; // declare variable for background image
 
 function preload(){
-  bg = loadImage("space2.jpg");
+  bg = loadImage("./img/space2.jpg");
 }
 // this function creates the size of the canvas 
 function setup() {
